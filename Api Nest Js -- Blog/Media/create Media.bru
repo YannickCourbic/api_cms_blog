@@ -1,0 +1,15 @@
+meta {
+  name: create Media
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/rest/v1/media/create
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  media_file: @file(C:\Users\Yanni\Downloads\installer-php.mp4)
+}

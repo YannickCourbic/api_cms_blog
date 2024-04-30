@@ -1,0 +1,16 @@
+meta {
+  name: paginated banner
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:3000/api/rest/v1/banner/paginate?limit=4&page=2
+  body: none
+  auth: none
+}
+
+query {
+  limit: 4
+  page: 2
+}

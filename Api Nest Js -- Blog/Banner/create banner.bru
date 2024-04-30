@@ -1,0 +1,27 @@
+meta {
+  name: create banner
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:3000/api/rest/v1/banner/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "Introduction au objet en PHP 8",
+      "positionText" :{
+          "x": "50%",
+          "y": "50%"
+      },
+      "size": {
+          "height": "600px",
+          "width": "1080px"
+      },
+      "background": "#555",
+      "media" : "662ce57f1234dd20ced7081e"
+  }
+}
